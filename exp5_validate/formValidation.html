@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        .formcontrol {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style> -->
+    <form method="POST" action="formValidation.php">
+        <div class="formcontrol">
+            Name: <input type="text" name="name" required><br><br>
+            E-mail: <input type="text" name="email" required><br><br>
+            Phone no. : <input type="text" name="phone" required><br><br> 
+           Birth Date : <input type="date" name="bdate" required><br><br>
+            <div class="form-group">
+                <label>Gender :</label>
+                <div class="radio-group">
+                  <input type="radio" id="male" name="gender" value="Male" />
+                  <label for="admin">Male</label>
+                </div>
+                <div class="radio-group">
+                  <input type="radio" id="female" name="gender" value="Female" />
+                  <label for="user">Female</label>
+                </div>
+                <div class="radio-group">
+                  <input type="radio" id="other" name="gender" value="Other" />
+                  <label for="guest">Other</label>
+                </div>
+              </div>
+
+            <input type="submit" name="submit" >
+    </form>
+</div>
+</body>
+</html>
